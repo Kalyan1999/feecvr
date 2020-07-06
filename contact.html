@@ -83,16 +83,10 @@
             </div>
         </div>
     </header>
-    <div class="container">
-        <div class="row">
-            <div class="col-12">
-                <h3>Contact Us</h3>
-                <hr />
-             </div>
-              
-        </div>
-        <div class="card" style="width:300px; float:left;margin:10px;">
-            <div class="card-header bg-warning">
+    <div class="row">
+        <div id="loading1"></div>
+        <div class="card" style="width:300px; float:left;margin:10px;" id="card1">
+            <div class="card-header">
                 <p class="h4">Address</p>
                 <p class="text-muted text-justify text-muted">
 
@@ -111,8 +105,9 @@
             </div>
            
         </div>
-        <div class="card" style="width:300px; float:left;margin:10px;">
-            <div class="card-header bg-warning">
+        <div id="loading2"></div>
+        <div class="card" style="width:300px; float:left;margin:10px;" id="card2">
+            <div class="card-header">
                 <p class="h4">Office Address:</p>
                 <p class="text-muted text-justify text-muted">
 
@@ -133,28 +128,66 @@ Placements related: 08414 661663
            
         </div>
     </div>
+    </div>
 
-    <form>
-          <div class="row">
-            Name: <input type="text" class="form-control" placeholder="Name">
-          </div>
-          &nbsp;
-          &nbsp;
-          <div class="row">
-            Email: <input type="text" class="form-control" placeholder="Email">
-          </div>
-          &nbsp;
-          &nbsp;
-          <div class="row">
-            Phone: <input type="text" class="form-control" placeholder="Contact no">
-          </div>
-          &nbsp;
-          &nbsp;
-          <div class="row">
-          <button class="btn btn-primary">Submit</button>
+    
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+               <h3>Provide Feedback</h3>
+               <hr />
+            </div>
+             <div class="col-12 col-md-9">
+                 <form>
+                     <div class="form-group row">
+                         <label for="firstname" class="col-md-2 col-form-label"> First Name</label>
+                         <div class="col-md-10">
+                             <input type="text" class="form-control" id="firstname" name="firstname" placeholder="First Name">
+                         </div>
+                     </div>
+                     <div class="form-group row">
+                         <label for="lastname" class="col-md-2 col-form-label"> Last Name</label>
+                         <div class="col-md-10">
+                             <input type="text" class="form-control" id="lastname" name="lastname" placeholder="Last Name">
+                         </div>
+                     </div>
+                     <div class="form-group row">
+                         <label for="telnum" class=" col-12 col-md-2 col-form-label">Contact Tel.</label>
+                         <div class=" col-5 col-md-3">
+                             <input type="tel" class="form-control" id="areacode" name="areacode" placeholder="Area Code">
+                         </div>
+                         <div class="col-7 col-md-7">
+                             <input type="tel" class="form-control" id="telnum" name="telnum" placeholder="Tel. Number">
+                         </div>
+                     </div>
+                     <div class="form-group row">
+                         <label for="emailid" class="col-md-2 col-form-label"> Email</label>
+                         <div class="col-md-10">
+                             <input type="email" class="form-control" id="emailid" name="emailid" placeholder="Email">
+                         </div>
+                     </div>
+                    
+                     <div class="form-group row">
+                         <label for="feedback" class="col-md-2 col-form-label"> Your feedback</label>
+                         <div class="col-md-10">
+                             <textarea  class="form-control" id="feedback" name="feedback" placeholder="Write your feedback here" rows="12"></textarea>
+                         </div>
+                     </div>
+                     <div class="form-group row">
+                         <div class="offset-md-2 col-md-10">
+                             <button type="submit" class="btn btn-primary">
+                                 Submit
+                             </button>
+                         </div>
+                     </div>
+                 </form>
+             </div>
+              <div class="col-12 col-md">
+             </div>
         </div>
-    </form>
-      
+    </div>
+
+
 
 
     <script src="js/jquery-3.4.1.slim.min.js"></script>

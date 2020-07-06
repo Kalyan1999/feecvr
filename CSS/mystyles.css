@@ -16,3 +16,14 @@
         background: red;
     }
 }
+
+.blink {
+    animation: blinker 0.6s linear infinite;
+    color: green;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: sans-serif;
+    }
+    @keyframes blinker {  
+    50% { opacity: 0; }
+    }
